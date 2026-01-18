@@ -10,8 +10,8 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from database import Base, engine, DATABASE_URL
-from db_models import Wall, Obstacle, Plan, Path, Execution, Grid  # Import all models
+from db.database import Base, engine, DATABASE_URL
+from db.models import Wall, Obstacle, Plan, Path, Execution, Grid  # Import all models
 
 logging.basicConfig(
     level=logging.INFO,

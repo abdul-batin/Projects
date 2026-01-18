@@ -13,7 +13,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
 
 from algorithm import planner as planner_module
 from algorithm.grid_construction import Grid as GridBuilder
-from repositories import PlanRepository, PathRepository, GridRepository
+from db.repositories import PlanRepository, PathRepository, GridRepository
 
 
 class PlannerService:

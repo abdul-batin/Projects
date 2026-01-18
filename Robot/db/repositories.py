@@ -3,7 +3,7 @@ import logging
 from sqlalchemy.orm import Session
 from sqlalchemy import and_
 from typing import List, Optional
-from db_models import Wall, Obstacle, Plan, Path, Execution, Grid
+from .models import Wall, Obstacle, Plan, Path, Execution, Grid
 import numpy as np
 
 logger = logging.getLogger(__name__)

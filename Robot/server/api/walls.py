@@ -2,8 +2,8 @@ import logging
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from models import CreateWallRequest, CreateObstacleRequest, WallResponse
-from database import get_db
-from repositories import WallRepository, ObstacleRepository, GridRepository
+from db import get_db
+from db.repositories import WallRepository, ObstacleRepository, GridRepository
 
 logger = logging.getLogger(__name__)
 
