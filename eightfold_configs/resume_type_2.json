@@ -1,0 +1,29 @@
+{
+  "name": "resume_type_2",
+  "match": {
+    "required_fields": ["Full_name", "Education_details", "Summary"],
+    "optional_fields": ["Experiences", "Programming_languages", ["Webframeworks", "Webframekwroos"]]
+  },
+  "output": {
+    "First_name_last_name": {
+      "operation": "copy",
+      "sources": ["Full_name"]
+    },
+    "Education": {
+      "operation": "combine_education",
+      "sources": ["Education_details", "Master_degree"]
+    },
+    "Experiences": {
+      "operation": "listify",
+      "sources": ["Experiences"]
+    },
+    "Skills": {
+      "operation": "merge_lists",
+      "sources": ["Programming_languages", ["Webframeworks", "Webframekwroos"]]
+    },
+    "About": {
+      "operation": "copy",
+      "sources": ["Summary"]
+    }
+  }
+}

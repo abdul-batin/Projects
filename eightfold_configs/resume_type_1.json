@@ -1,0 +1,38 @@
+{
+  "name": "resume_type_1",
+  "match": {
+    "required_fields": ["First_name", "Last_name", "Education_details"],
+    "optional_fields": ["Experiences", "Skills", "Master_degree"]
+  },
+  "output": {
+    "First_name_last_name": {
+      "operation": "join_non_empty",
+      "sources": ["First_name", "Last_name"],
+      "separator": " "
+    },
+    "Education": {
+      "operation": "combine_education",
+      "sources": ["Education_details", "Master_degree"]
+    },
+    "Experiences": {
+      "operation": "listify",
+      "sources": ["Experiences"]
+    },
+    "Skills": {
+      "operation": "listify",
+      "sources": ["Skills"]
+    },
+    "About": {
+      "operation": "template",
+      "template": "{First_name} {Last_name} has {experience_count} recorded experience item(s).",
+      "context": {
+        "First_name": "First_name",
+        "Last_name": "Last_name",
+        "experience_count": {
+          "operation": "count_items",
+          "sources": ["Experiences"]
+        }
+      }
+    }
+  }
+}
