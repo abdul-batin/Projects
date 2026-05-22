@@ -3,8 +3,8 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from models import PlanRequest, PlanResponse, PlanCandidate
 from services.planner_service import PlannerService
-from database import get_db
-from repositories import WallRepository, ObstacleRepository, PlanRepository
+from db import get_db
+from db.repositories import WallRepository, ObstacleRepository, PlanRepository
 
 logger = logging.getLogger(__name__)
 

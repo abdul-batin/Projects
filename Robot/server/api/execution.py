@@ -1,8 +1,8 @@
 import logging
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database import get_db
-from repositories import PathRepository, ExecutionRepository
+from db import get_db
+from db.repositories import PathRepository, ExecutionRepository
 
 logger = logging.getLogger(__name__)
 

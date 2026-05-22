@@ -1,0 +1,104 @@
+{
+  "1_create_wall_rectangle": {
+    "name": "Living Room",
+    "geometry": {
+      "coordinates": [[0, 0], [5, 0], [5, 4], [0, 4]]
+    }
+  },
+
+  "2_create_wall_lshaped": {
+    "name": "L-Shaped Office",
+    "geometry": {
+      "coordinates": [[0, 0], [10, 0], [10, 6], [6, 6], [6, 10], [0, 10], [0, 0]]
+    }
+  },
+
+  "3_create_wall_complex": {
+    "name": "Conference Room",
+    "geometry": {
+      "coordinates": [[0, 0], [8, 0], [8, 5], [6, 5], [6, 7], [2, 7], [2, 5], [0, 5], [0, 0]]
+    }
+  },
+
+  "4_add_obstacle_window": {
+    "type": "window",
+    "geometry": {
+      "coordinates": [[1, 2], [2, 2], [2, 3.5], [1, 3.5]]
+    }
+  },
+
+  "5_add_obstacle_door": {
+    "type": "door",
+    "geometry": {
+      "coordinates": [[3.5, 0], [4.5, 0], [4.5, 1], [3.5, 1]]
+    }
+  },
+
+  "6_add_obstacle_desk": {
+    "type": "desk",
+    "geometry": {
+      "coordinates": [[2, 2], [4, 2], [4, 3.5], [2, 3.5]]
+    }
+  },
+
+  "7_add_obstacle_column": {
+    "type": "column",
+    "geometry": {
+      "coordinates": [[5, 2], [5.5, 2], [5.5, 2.5], [5, 2.5]]
+    }
+  },
+
+  "8_add_obstacle_plant": {
+    "type": "plant",
+    "geometry": {
+      "coordinates": [[1, 7], [2, 7], [2, 8], [1, 8]]
+    }
+  },
+
+  "9_generate_plan_high_resolution": {
+    "resolution": 0.1
+  },
+
+  "10_generate_plan_medium_resolution": {
+    "resolution": 0.2
+  },
+
+  "11_generate_plan_low_resolution": {
+    "resolution": 0.5
+  },
+
+  "12_telemetry_update_25_percent": {
+    "execution_id": 1,
+    "position": [1.5, 2.0],
+    "progress": 25.0,
+    "status": "RUNNING"
+  },
+
+  "13_telemetry_update_50_percent": {
+    "execution_id": 1,
+    "position": [2.5, 2.0],
+    "progress": 50.0,
+    "status": "RUNNING"
+  },
+
+  "14_telemetry_update_75_percent": {
+    "execution_id": 1,
+    "position": [3.5, 3.0],
+    "progress": 75.0,
+    "status": "RUNNING"
+  },
+
+  "15_telemetry_update_completed": {
+    "execution_id": 1,
+    "position": [4.5, 3.5],
+    "progress": 100.0,
+    "status": "COMPLETED"
+  },
+
+  "16_telemetry_update_failed": {
+    "execution_id": 1,
+    "position": [2.0, 1.5],
+    "progress": 35.0,
+    "status": "FAILED"
+  }
+}
